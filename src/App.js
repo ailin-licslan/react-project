@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import CityList from './pages/CityList';
 import News from './pages/News';
+import ShoppingList from './pages/ShoppingList';
 
 function App() {
   return (
@@ -28,6 +29,12 @@ function App() {
           <li>
           <Link to="/cityList">城市选择</Link>
           </li>
+          <li>
+          <Link to="/shoppingList">Shopping List</Link>
+          </li>
+          <li>
+          <Link to="/home/news">news</Link>
+          </li>
         </ul>
 
         
@@ -38,6 +45,7 @@ function App() {
             <Route path='/home/news' element={<News/>}/>
           </Route>
           <Route path="/cityList" element={<CityList />} />
+          <Route path="/shoppingList" element={<ShoppingList />} />
         </Routes>
 
 
